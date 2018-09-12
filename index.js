@@ -1,6 +1,6 @@
 // https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
 
-module.exports= (name, url) => {
+function t(name, url){
     if (!url) url = window.location.search;
     name = name.replace(/[\[\]]/g, '\\$&');
     var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
@@ -9,3 +9,5 @@ module.exports= (name, url) => {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
+
+module.exports=t;
