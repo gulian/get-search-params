@@ -4,5 +4,9 @@
   "main": "index.js",
   "repository": "https://github.com/gulian/get-search-params",
   "author": "Gulian",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "decode-uri-component": "^0.2.0",
+    "strict-uri-encode": "^2.0.0"
+  }
 }
